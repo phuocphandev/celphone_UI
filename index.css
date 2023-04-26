@@ -14,51 +14,73 @@ html, body{
 
 /* Carousel  */
         /* Css  */
-.carousel_item1{
+            /* Carousel Slide  */
+.carousel_slide_item1{
     background: url(./Carousel_img/banner2.jpg);
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 90vh;
 }
-.carousel_item2{
+.carousel_slide_item2{
     background: url(./Carousel_img/banner3.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     height: 90vh;
 }
-.carousel .container{
+.carousel_container .container{
     margin:auto;
     padding-top: 20vh;
     max-width: 450px;
     transform: translateX(-200px);
 }
-.carousel .container h1{
+.carousel_container .container h1{
     font-size: 50px;
     color:white;
     margin-bottom:20px;
 }
-.carousel .container button{
+.carousel_container .container button{
     padding:10px 20px;
     font-weight: bold;
     border-radius: 5px;
     border: 0px solid transparent;
     transition: 0.5s;
 }
-.carousel .container button i{
+.carousel_container .container button i{
     padding-left:5px;
     font-weight: bold;
     font-size: 15px;
     transform: translateY(2px);
 }
-.carousel .container button:hover{
+.carousel_container .container button:hover{
     color:#fff;
     background-color: #ff6900;
 }
+            /* Carousel Item  */
+.carousel_items{
+    display: flex;
+    justify-content:space-evenly;
+    border: 1px solid black;
+}
+.carousel_item1{
+    background-color: #037ef3;
+}
+.carousel_item2{
+    background-color: #ffc949;
+}
+.carousel_item3{
+    background-color:#ff4f81 ;
+}
+.carousel_item4{
+    background-color: #1ee697;
+}
+.list_item{
+    width:280px;
+    height:230px;
+}
         /* Owl  */
 .owl-carousel{
-    border: 1px solid red;
     position: relative;
 }
 .owl-dots{
