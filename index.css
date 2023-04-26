@@ -15,21 +15,18 @@ html, body{
 /* Carousel  */
         /* Css  */
             /* Carousel Slide  */
-.carousel_container{
-    z-index: -1;
-}
-.test{
-    position: relative;
-    z-index: 10;
-}
+
+
 .carousel_slide_item1{
     background: url(./Carousel_img/banner2.jpg);
+    background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
     height: 90vh;
 }
 .carousel_slide_item2{
     background-image: url(./Carousel_img/banner3.jpg);
+    background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
     height: 90vh;
@@ -51,7 +48,10 @@ html, body{
     border-radius: 5px;
     border: 0px solid transparent;
     transition: 0.5s;
-    z-index: 3;
+/* xài z-index phải có position mới ăn nha e */
+    z-index: 3; 
+    position: relative;
+
 }
 .carousel_container .container button i{
     padding-left:5px;
@@ -71,7 +71,8 @@ html, body{
     gap:20px;
     margin:0 auto;
     transform: translateY(-100px);
-    z-index: 0;
+    position: relative;
+    z-index: 10;
     border: 1px solid black;
 }
 .carousel_item1{
@@ -125,9 +126,9 @@ html, body{
 }
         /*responsive */
 @media screen and (min-width: 1200px){
-    .carousel_slide_item1, .carousel_slide_item2{
+    /* .carousel_slide_item1, .carousel_slide_item2{
         background-size: 100%;
-    }
+    } */
 }
 @media screen and (max-width: 992px){
     .carousel_items{
@@ -153,4 +154,20 @@ html, body{
     .carousel_container .container h1{
         font-size: 20px;
     }
+}
+
+
+
+/* Banner */
+.banner{
+    background-image: url(./Carousel_img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+    position: relative;
+    z-index:-1;
+}
+.banner_item1{
+    font-size: 50px;
 }
