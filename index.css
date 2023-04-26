@@ -18,6 +18,10 @@ html, body{
 .carousel_container{
     z-index: -1;
 }
+.test{
+    position: relative;
+    z-index: 10;
+}
 .carousel_slide_item1{
     background: url(./Carousel_img/banner2.jpg);
     background-position: top right;
@@ -47,6 +51,7 @@ html, body{
     border-radius: 5px;
     border: 0px solid transparent;
     transition: 0.5s;
+    z-index: 3;
 }
 .carousel_container .container button i{
     padding-left:5px;
@@ -132,6 +137,9 @@ html, body{
     .list_item{
         width: 100%;
     }
+    .carousel_container .container h1{
+        font-size: 35px;
+    }
 }
 @media screen and (max-width: 576px){
     .carousel_items{
@@ -141,5 +149,8 @@ html, body{
     }
     .list_item{
         width: 100%;
+    }
+    .carousel_container .container h1{
+        font-size: 20px;
     }
 }
