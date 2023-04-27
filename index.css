@@ -12,6 +12,22 @@ html, body{
     margin:0px 70px;
 }
 
-
+/* Feedback  */
+.feedback .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+}
+.feedback .feedback_item{
+    width: 370px;
+    height: 260px;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.feedback .feedback_item_container{
+    display: flex;
+    gap:30px;
+}
 
 
