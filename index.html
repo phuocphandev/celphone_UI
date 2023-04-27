@@ -7,6 +7,22 @@
     <title>Capstone_Group12</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Owl carousel  -->
+    <!-- OWL CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Font Anwesome  -->
     <link
       rel="stylesheet"
@@ -20,11 +36,50 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- My CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header></header>
-    <section class="carousel"></section>
+    <section class="carousel">
+      <div class="carousel_container owl-carousel owl-theme">
+        <div class="carousel_slide_item1">
+          <div class="container">
+            <div class="slide_content">
+              <h1>Master the Skills to Drive your Career</h1>
+              <button>Know More<i class="fa fa-arrow-right"></i></button>
+            </div>
+            
+          </div>
+        </div>
+        <div class="carousel_slide_item2">
+          <div class="container">
+            <div class="slide_content">
+              <h1>Studious is the best choice for everyone</h1>
+              <button>Know More<i class="fa fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel_items container">
+        <div class="carousel_item1 list_item">
+          <i class="fa fa-cogs"></i>
+          <p>Engineering & Architecture</p>
+        </div>
+        <div class="carousel_item2 list_item">
+          <i class="fa fa-book"></i>
+          <p>Learning Management</p>
+        </div>
+        <div class="carousel_item3 list_item">
+          <i class="fa fa-coffee"></i>
+          <p>Business & Management</p>
+        </div>
+        <div class="carousel_item4 list_item">
+          <i class="fa fa-hourglass-half"></i>
+          <p>Artificial Intelligence</p>
+        </div>
+      </div>
+    </section>
     <section class="title"></section>
     <section class="banner"></section>
     <section class="number"></section>
@@ -32,5 +87,39 @@
     <section class="instructor"></section>
     <section class="contact"></section>
     <footer></footer>
+    <!-- OWL JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".carousel_container").owlCarousel({
+          loop: true, //lặp lại các item
+          margin: 10, //khoảng cách giữa các item
+          nav: false, //hiện mũi tên trái phải
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1, //số lượng item khi ở màn hình >= 0
+            },
+            576: {
+              items: 1, //số lượng item khi ở màn hình >= 576px
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
