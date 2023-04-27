@@ -32,10 +32,13 @@ html, body{
     height: 90vh;
 }
 .carousel_container .container{
+    display:flex;
     margin:auto;
     padding-top: 20vh;
+    justify-content: space-between;
+}
+.carousel_container .container .slide_content{
     max-width: 450px;
-    transform: translateX(-250px);
 }
 .carousel_container .container h1{
     font-size: 50px;
@@ -73,7 +76,6 @@ html, body{
     transform: translateY(-100px);
     position: relative;
     z-index: 10;
-    border: 1px solid black;
 }
 .carousel_item1{
     background-color: #037ef3;
@@ -157,17 +159,3 @@ html, body{
 }
 
 
-
-/* Banner */
-.banner{
-    background-image: url(./Carousel_img/bg3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 50vh;
-    position: relative;
-    z-index:-1;
-}
-.banner_item1{
-    font-size: 50px;
-}
