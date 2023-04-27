@@ -144,7 +144,7 @@ html, body{
         font-size: 35px;
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .carousel_items{
         grid-template-columns: 1fr;
         gap:10px;
@@ -164,7 +164,6 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,7 +179,6 @@ html, body{
     font-size: 25px;
     background-color: #fff;
     color:#0d369f;
-    background: rgb(13 54 159 / 9%);
     padding:15px;
     border-radius: 50%;
 }
@@ -221,5 +219,24 @@ html, body{
 #bg_transparent{
     background: transparent;
 }
-
-
+    /* Responsive  */
+@media screen and (max-width: 992px){
+    #bg_transparent{
+        width:0;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner_row{
+        flex-direction: column;
+    }
+    .banner .container{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        
+    }
+    #bg_transparent{
+        width: 0;
+        height: 0;
+    }
+}
