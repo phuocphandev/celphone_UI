@@ -87,4 +87,17 @@ html, body{
     border-radius: 50%;
     width:50px;
 }
-
+    /* Responsive */
+@media screen and (max-width: 992px) {
+    .feedback_item_container{
+        flex-wrap: wrap;
+        min-width:600px;
+    }
+    .feedback_item{
+        margin: auto;
+    }
+    .feedback_item_responsive{
+        flex-basis: 100%;
+        margin: auto;
+    } 
+}
