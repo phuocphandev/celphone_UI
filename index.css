@@ -9,5 +9,66 @@ html, body{
 .container{
     max-width: 960px;
     padding:48px 15px;
-    margin:0px 70px;
+    margin:0px 70px; 
+}
+/* HEADER */
+/* header_top */
+.header__top{
+    height: 50px; 
+    background: #0d369f;
+    padding: 14px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+    .header__top{
+        display:none;
+    }
+ }
+ .header__top--left ul li a, .header__top--right ul li a{
+    height: 100%;
+    transition: 0.5s;
+ }
+ .header__top--left ul li a:hover, .header__top--right ul li a:hover{
+    color: #ff6e65;
+ }
+/* header_top--left */
+.header__top--left ul{
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.header__top--left li{
+    margin-right: 40px;
+}
+.header__top--left ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header__top--left ul li i{
+    color: #fff;
+}
+/* header_top--right */
+
+.header__top--right ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+   
+}
+.header__top--right ul li{
+    margin-left: 40px;
+}
+.header__top--right ul a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* header bottom */
+.header__bottom .navbar-collapse{
+    justify-content: flex-end;
 }
