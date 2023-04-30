@@ -6,7 +6,7 @@
 html, body{
     font-family: 'Montserrat', sans-serif;
 }
-.container{
+.mycontainer{
     max-width: 960px;
     padding:48px 15px;
     margin:0px 70px; 
@@ -72,3 +72,78 @@ html, body{
 .header__bottom .navbar-collapse{
     justify-content: flex-end;
 }
+.header__bottom .input-search input{
+    border-radius: 30px;
+    padding: 10px 35px 10px 20px;
+    font-size: 15px;
+}
+.header__bottom .brandname{
+    color: #0d369f;
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header__bottom .nav-item .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.header__bottom .navbar-brand .brandname:hover{
+    color: #ff6e65;
+}
+.header__bottom .nav-item .nav-link:hover{
+    color: #ff6e65;
+}
+.header__bottom .nav-item.active .nav-link{
+    color: #ff6e65;
+}
+.header__bottom form{
+    position: relative;
+}
+#search_header{
+    display: inline-block;
+    color: #0d369f;
+    position: absolute;
+    right: 0;
+    padding: 0 20px 0 0 ;
+    transition: .5s;
+}
+#search_header:hover{
+    color: #ff6e65;
+    border: 1px solid rgba(128, 128, 128,0.5);
+}
+.header__bottom svg{
+    color: #0d369f;
+}
+.header__bottom #navbarDropdown::after{
+    display: none;
+    
+}
+.header__bottom .nav-item .dropDownicon{
+    font-size: 18px;
+    color: gray;
+    transform: scale(0.7);
+}
+button.navbar-toggler{
+    padding: 0;
+}
+.navbar-light .navbar-toggler-icon.fa{
+    font-size: 20px;
+    color: black;
+    background-image: none;
+    background-color: #4867b0;
+    line-height: 34px;
+}
+.navbar-toggler-icon{
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+}
+
+
