@@ -75,13 +75,12 @@
         </div>
       </div>
       <div class="header__bottom">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg stroke">
           <a class="navbar-brand" href="#"><img src="./img_2/logo.png" alt="" class="mr-1"><span class="brandname">Studious</span> </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon icon-expand fa fa-bars "></span>
-            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times d-none"></span>
           </button>
-        
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item active">
@@ -107,15 +106,28 @@
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <div class="input-search">
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search" required >
+              <div class="search__right">
+                <form class="form-inline my-2 my-lg-0">
+                  <div class="input-search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter keyword" aria-label="Search" required >
+                    
+                    <button id="search_header" class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                </form>
               </div>
-              <button id="search_header" class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-            </form>
             <!-- theme -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8Zm0 2a6 6 0 1 0 0-12a6 6 0 0 0 0 12ZM11 0h2v4.062a8.079 8.079 0 0 0-2 0V0ZM7.094 5.68L4.222 2.808L2.808 4.222L5.68 7.094A8.048 8.048 0 0 1 7.094 5.68ZM4.062 11H0v2h4.062a8.079 8.079 0 0 1 0-2Zm1.618 5.906l-2.872 2.872l1.414 1.414l2.872-2.872a8.048 8.048 0 0 1-1.414-1.414ZM11 19.938V24h2v-4.062a8.069 8.069 0 0 1-2 0Zm5.906-1.618l2.872 2.872l1.414-1.414l-2.872-2.872a8.048 8.048 0 0 1-1.414 1.414ZM19.938 13H24v-2h-4.062a8.069 8.069 0 0 1 0 2ZM18.32 7.094l2.872-2.872l-1.414-1.414l-2.872 2.872c.528.41 1.003.886 1.414 1.414Z" clip-rule="evenodd"/></svg>
-
+          </div>
+          <div class="cont-ser-postion w3DarkLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label for="checkbox" class="them-switch">
+                  <div class="mode-container">
+                    <svg class="gg-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8Zm0 2a6 6 0 1 0 0-12a6 6 0 0 0 0 12ZM11 0h2v4.062a8.079 8.079 0 0 0-2 0V0ZM7.094 5.68L4.222 2.808L2.808 4.222L5.68 7.094A8.048 8.048 0 0 1 7.094 5.68ZM4.062 11H0v2h4.062a8.079 8.079 0 0 1 0-2Zm1.618 5.906l-2.872 2.872l1.414 1.414l2.872-2.872a8.048 8.048 0 0 1-1.414-1.414ZM11 19.938V24h2v-4.062a8.069 8.069 0 0 1-2 0Zm5.906-1.618l2.872 2.872l1.414-1.414l-2.872-2.872a8.048 8.048 0 0 1-1.414 1.414ZM19.938 13H24v-2h-4.062a8.069 8.069 0 0 1 0 2ZM18.32 7.094l2.872-2.872l-1.414-1.414l-2.872 2.872c.528.41 1.003.886 1.414 1.414Z" clip-rule="evenodd"/></svg>
+                    <svg class="gg-moon d-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12.226 2.003a9.971 9.971 0 0 0-7.297 2.926c-3.905 3.905-3.905 10.237 0 14.142c3.905 3.905 10.237 3.905 14.142 0a9.972 9.972 0 0 0 2.926-7.297a10.037 10.037 0 0 0-.337-2.368a14.87 14.87 0 0 1-1.744 1.436c-1.351.949-2.733 1.563-3.986 1.842c-1.906.423-3.214.032-3.93-.684c-.716-.716-1.107-2.024-.684-3.93c.279-1.253.893-2.635 1.841-3.986c.415-.592.894-1.177 1.437-1.744a10.017 10.017 0 0 0-2.368-.337Zm5.43 15.654a7.964 7.964 0 0 0 2.251-4.438c-3.546 2.045-7.269 2.247-9.321.195c-2.052-2.052-1.85-5.775.195-9.321a8 8 0 1 0 6.876 13.564Z" clip-rule="evenodd"/></svg>
+                  </div>
+                </label>
+              </div>
+            </nav>
           </div>
         </nav>
       </div>
@@ -147,5 +159,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Our JS -->
+    <script src="./index.js"></script>
   </body>
 </html>
