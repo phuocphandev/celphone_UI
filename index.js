@@ -36,7 +36,7 @@ sun.addEventListener('click', function(){
     moon.classList.remove('d-none');
     body.style.backgroundColor = "white";
     html.style.backgroundColor = "white";
-    brandnameElement.style.color ="#0d369f";
+    brandnameElement.classList.remove("brandname_darkTheme");
     formElement.style.border="2px solid gray";
     formElement.style.background="transparent";
     input.style.setProperty('--placeholder-color', 'gray');
@@ -63,9 +63,6 @@ sun.addEventListener('click', function(){
     // navcontact.addEventListener('mouseout', function() {
     // this.style.color = linkColor2;
     // });
-
-    
-
 });
 moon.addEventListener('click', function(){
     sun.classList.remove('d-none');
@@ -73,7 +70,7 @@ moon.addEventListener('click', function(){
     hTopelement.style.background="#4867b0";
     body.style.backgroundColor = "#161c2d";
     html.style.backgroundColor = "#161c2d";
-    brandnameElement.style.color ="white";
+    brandnameElement.classList.add("brandname_darkTheme");
     formElement.style.border="2px solid white";
     formElement.style.background="transparent";
     input.style.setProperty('--placeholder-color', 'white');
@@ -98,5 +95,4 @@ moon.addEventListener('click', function(){
     // navcontact.addEventListener('mouseout', function() {
     // this.style.color = linkColor2;
     // });
-
 });

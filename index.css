@@ -87,7 +87,13 @@ html, body{
 }
 
 .header__bottom .brandname{
-    color: #0d369f;
+    color: var(--brandname-color,#0d369f);
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.header__bottom .brandname.brandname_darkTheme{
+    color: var(--brandname-color,white);
     font-size: 26px;
     font-weight: 600;
     transition: 0.5s;
