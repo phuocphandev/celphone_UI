@@ -5,6 +5,7 @@
 }
 html, body{
     font-family: 'Montserrat', sans-serif;
+    background:white;
 }
 .mycontainer{
     max-width: 960px;
@@ -21,6 +22,7 @@ html, body{
     align-items: center;
     justify-content: space-between;
 }
+
 @media (max-width: 991.98px) {
     .header__top{
         display:none;
@@ -72,11 +74,16 @@ html, body{
  .navbar-nav{
     margin-left: auto;
 }
+.form-control::placeholder{
+    color: var(--placeholder-color,gray);
+}
 
 .header__bottom .input-search input{
     border-radius: 30px;
     padding: 10px 35px 10px 20px;
     font-size: 15px;
+    background: transparent;
+    
 }
 
 .header__bottom .brandname{
@@ -88,11 +95,19 @@ html, body{
 
 .header__bottom .nav-item .nav-link{
     text-decoration: none;
-    color: black;
+    color: var(--navlink-color,black);
     font-size: 16px;
     font-weight: 600;
     transition: 0.5s;
 }
+.header__bottom .nav-item .nav-link.darkTheme{
+    text-decoration: none;
+    color: var(--navlink-color,white);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
 
 .header__bottom .navbar-brand .brandname:hover{
     color: #ff6e65;
@@ -162,7 +177,17 @@ button.navbar-toggler{
 .navbar-toggler-icon::before{
     line-height: 30px;
 }
-
+/* chỉnh cái dropdown menu khi chưa responsive đúng vị trí trung tâm */
+.dropdown-menu{
+    left:-45px;
+}
+/* 2 css bên dưới chỉnh dropdown menu khi responsive nằm trung tâm và border vừa đúng kích thước */
+.navbar-nav .dropdown-menu{
+    text-align: center;
+}
+.dropdown-menu.show {
+    display: inline-block;
+}
 @media only screen and (max-width: 991px) {.form-inline .input-search{
     text-align: center;
    
@@ -172,24 +197,28 @@ button.navbar-toggler{
 @media only screen and (max-width: 991px){#navbarSupportedContent ul.navbar-nav{
     display:block;
     text-align: center;
-    background: white; 
+    /* background: #161c2d;  */
     width: 100%;
 }} 
 /* block chứa ô search */
  @media only screen and (max-width: 991px){#navbarSupportedContent .form-inline{
     margin-top: 20px;
     width: 100%;
-    background: white;
+    /* background: #161c2d; */
     padding: 20px 0;
     justify-content: center;
 
 }} 
+/* reponsive dropdownmenu */
+/* @media only screen and(max-width:991px){.navbar-nav .dropdown-menu{
+    text-align: center;
+}} */
 
  @media only screen and (max-width: 991px){.header__bottom .nav-item.active .nav-link{
-    color:#0d369f;
+    color:#ff6e65;
 }}
 @media only screen and (max-width: 991px){.header__bottom .nav-item .nav-link:hover{
-    color:#0d369f;
+    color:#ff6e65;
 }}
 
 @media only screen and (max-width: 991px){.form-inline .input-search{
@@ -208,8 +237,8 @@ button.navbar-toggler{
     
 @media only screen and (max-width: 991px){.navbar-expand-lg .cont-ser-postion{ 
     position: absolute;
-    top: 22px;
-    right: 50px;
+    top: 24px;
+    right: 55px;
  }}  
  
  
