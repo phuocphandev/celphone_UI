@@ -245,8 +245,80 @@ html, body{
 .contact .contact_des button{
     color:white;
     padding: 10px 25px 10px 25px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid #7bdcb5;
     background-color: #ff6e65;
     margin-top:10px;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight:600;
+}
+.contact .contact_des button:hover{
+    background-color: #0d369f;
+}
+    /* Responsive */
+@media screen and (max-width: 992px){
+    .contact .container{
+    flex-wrap: wrap;
+    padding:0 70px 0 70px;
+    }
+}
+
+/* Footer */
+footer{
+    background-color: #060e1f;
+}
+footer .container{
+    margin: 0 auto;
+}
+footer .box{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    gap:20px;
+    padding: 20px;
+}
+footer .box .subcribe_box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+footer .box .input_box{
+    display: flex;
+    align-self: center;
+    gap:0px;
+    height:55px;
+}
+footer .box .input_box input{
+    border: 2px solid #f6f6f6;
+    border-radius: 10px 0 0 10px;
+    border-right:transparent ;
+    width: 300px;
+}
+footer .box .input_box input:focus{
+    outline: none;
+    border-color:#7bdcb5;
+    border-right:transparent ;
+    border-radius: 10px 0 0 10px;
+}
+footer .box .input_box button{
+    width:100px;
+    color: white;
+    background-color: #0d369f;
+    border: 2px solid transparent;
+    border-radius: 0 10px 10px 0;
+}
+footer .box .input_box button:active,
+footer .box .input_box button:focus{
+    outline: none;
+    border-color: #7bdcb5;
+    border-radius: 0 10px 10px 0;
+}
+footer .box .subcribe_box h4 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.footer_des li{
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
