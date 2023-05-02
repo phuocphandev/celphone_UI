@@ -5,12 +5,19 @@
 }
 html, body{
     font-family: 'Montserrat', sans-serif;
+    background:white;
 }
-.container{
+.mycontainer{
     max-width: 960px;
     padding:48px 15px;
     margin:0px 70px; 
 }
+/* .fixed-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+  } */
+
 /* HEADER */
 /* header_top */
 .header__top{
@@ -21,7 +28,8 @@ html, body{
     align-items: center;
     justify-content: space-between;
 }
-@media (max-width: 991.98px) {
+
+@media (max-width: 991px) {
     .header__top{
         display:none;
     }
@@ -69,9 +77,183 @@ html, body{
     font-weight: 500;
 }
 /* header bottom */
-.header__bottom .navbar-collapse{
-    justify-content: flex-end;
+ .navbar-nav{
+    margin-left: auto;
 }
+.form-control::placeholder{
+    color: var(--placeholder-color,gray);
+}
+
+.header__bottom .input-search input{
+    border-radius: 30px;
+    padding: 10px 35px 10px 20px;
+    font-size: 15px;
+    background: transparent;
+    
+}
+
+.header__bottom .brandname{
+    color: var(--brandname-color,#0d369f);
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.header__bottom .brandname.brandname_darkTheme{
+    color: var(--brandname-color,white);
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header__bottom .nav-item .nav-link{
+    text-decoration: none;
+    color: var(--navlink-color,black);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.header__bottom .nav-item .nav-link.darkTheme{
+    text-decoration: none;
+    color: var(--navlink-color,white);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+.header__bottom .navbar-brand .brandname:hover{
+    color: #ff6e65;
+}
+
+.header__bottom .nav-item .nav-link:hover{
+    color: #ff6e65;
+}
+
+.header__bottom .nav-item.active .nav-link{
+    color: #ff6e65;
+}
+
+.header__bottom form{
+    position: relative;
+}
+.search__right{
+    position: relative;
+}
+#search_header{
+    color: #0d369f;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    padding: 0 20px 0 0 ;
+    transition: .5s;
+}
+
+#search_header:hover, .header__bottom svg:hover{
+    color: #ff6e65;
+    border: 1px solid rgba(128, 128, 128,0.5);
+}
+
+.header__bottom svg:hover{ 
+    border:none;
+}
+
+.header__bottom svg{
+    color: #0d369f;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.header__bottom #navbarDropdown::after{
+    display: none;
+    
+}
+
+.header__bottom .nav-item .dropDownicon{
+    font-size: 18px;
+    color: gray;
+    transform: scale(0.7);
+}
+
+button.navbar-toggler{
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    background: #0d369f;
+    border: none;
+    color: white;
+    height: 30px;
+
+}
+
+.navbar-toggler-icon::before{
+    line-height: 30px;
+}
+/* chỉnh cái dropdown menu khi chưa responsive đúng vị trí trung tâm */
+.dropdown-menu{
+    left:-45px;
+}
+/* 2 css bên dưới chỉnh dropdown menu khi responsive nằm trung tâm và border vừa đúng kích thước */
+.navbar-nav .dropdown-menu{
+    text-align: center;
+}
+.dropdown-menu.show {
+    display: inline-block;
+}
+@media only screen and (max-width: 991px) {.form-inline .input-search{
+    text-align: center;
+   
+}}
+
+/* block chứa các thẻ home, about us... */
+@media only screen and (max-width: 991px){#navbarSupportedContent ul.navbar-nav{
+    display:block;
+    text-align: center;
+    /* background: #161c2d;  */
+    width: 100%;
+}} 
+/* block chứa ô search */
+ @media only screen and (max-width: 991px){#navbarSupportedContent .form-inline{
+    margin-top: 20px;
+    width: 100%;
+    /* background: #161c2d; */
+    padding: 20px 0;
+    justify-content: center;
+
+}} 
+/* reponsive dropdownmenu */
+/* @media only screen and(max-width:991px){.navbar-nav .dropdown-menu{
+    text-align: center;
+}} */
+
+ @media only screen and (max-width: 991px){.header__bottom .nav-item.active .nav-link{
+    color:#ff6e65;
+}}
+@media only screen and (max-width: 991px){.header__bottom .nav-item .nav-link:hover{
+    color:#ff6e65;
+}}
+
+@media only screen and (max-width: 991px){.form-inline .input-search{
+    position: relative; 
+    display: inline-block; 
+}}
+
+@media only screen and (max-width: 991px){button#search_header{
+    position: absolute;
+    right: 0;
+    top: -14px;
+}}
+@media only screen and (max-width: 991px){.mb-2, .my-2{ 
+   margin-top: 20px !important;
+}}
+    
+@media only screen and (max-width: 991px){.navbar-expand-lg .cont-ser-postion{ 
+    position: absolute;
+    top: 24px;
+    right: 55px;
+ }}  
+
+ 
 
 /* Carousel  */
         /* Css  */
