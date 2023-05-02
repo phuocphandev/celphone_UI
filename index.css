@@ -386,7 +386,7 @@ button.navbar-toggler{
         font-size: 35px;
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .carousel_items{
         grid-template-columns: 1fr;
         gap:10px;
@@ -476,4 +476,87 @@ h3.title-main::after{
     font-size: 46px;
     font-weight: 600;
     color:black;
+}
+
+/* Banner */
+.banner{
+    background-image: url(./Carousel_img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .ourcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.banner_item i{
+    font-size: 25px;
+    background-color: #fff;
+    color:#0d369f;
+    padding:15px;
+    border-radius: 50%;
+}
+.banner_row{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.banner_row .banner_item{
+    width:370px;
+    height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}
+.banner_row .banner_item .banner_item_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width: 300px;
+    
+}
+.banner_row .banner_item .banner_item_container .banner_item_text{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.banner_row .banner_item .banner_item_container .banner_item_text h5{
+    font-size: 20px;
+}
+.banner_row .banner_item .banner_item_container .banner_item_text p{
+    padding-right:40px;
+}
+#bg_transparent{
+    background: transparent;
+}
+    /* Responsive  */
+@media screen and (max-width: 992px){
+    #bg_transparent{
+        width:0;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner_row{
+        flex-direction: column;
+    }
+    .banner .container{
+        display: flex;
+        flex-direction: column;
+        gap:0;
+        
+    }
+    #bg_transparent{
+        width: 0;
+        height: 0;
+    }
 }
