@@ -313,13 +313,13 @@ h3.title-main::after{
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
-.instructor .team-bottom-block .member a{
+.instructor .team-bottom-block .member a {
     text-decoration: none;
     color: black;
     transition: .5s;
     font-weight: 600;
 }
-.instructor .team-bottom-block .member a:hover{
+.instructor .team-bottom-block .member a:hover, .instructor .team-block-single:hover .member a{
     color: #ff6e65;
 }
 .instructor .team-bottom-block small{
