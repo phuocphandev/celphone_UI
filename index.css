@@ -7,11 +7,12 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     background:white;
 }
-.mycontainer{
+.ourcontainer{
     max-width: 960px;
     padding:48px 15px;
     margin:0px 70px; 
 }
+
 /* .fixed-div {
     position: fixed;
     top: 0;
@@ -397,4 +398,82 @@ button.navbar-toggler{
     .carousel_container .container h1{
         font-size: 20px;
     }
+}
+/* TITLE */
+h3.title-main{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+h3.title-main span{
+    color: #ff6e65;
+}
+h3.title-main::before{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: -20px;
+    bottom: -8px;
+}
+h3.title-main::after{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 20px;
+    bottom: -15px;
+   
+}
+.title .feature-images span{
+    color: #0d369f;
+    font-size: 30px;
+    background:rgba(13,54,159,0.09);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+.title .feature-info a{
+    text-decoration: none;
+}
+.title h3.feature-title{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    transition: .5s;
+    color: black;
+}
+.title h3.feature-title:hover{
+    color:#ff6e65;
+}
+.title p.feature-text{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+/* NUMBER */
+.number p.undertext{
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+.number .count-text{
+    text-transform: uppercase;
+    color: black;
+}
+.number .counterpart .timer{
+    font-size: 46px;
+    font-weight: 600;
+    color:black;
 }
