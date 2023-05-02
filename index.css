@@ -286,11 +286,77 @@ h3.title-main::after{
     letter-spacing: .4px;
 }
 .number .count-text{
+    border-right: 0.2px solid rgba(128, 128, 128,0.2);
     text-transform: uppercase;
     color: black;
 }
+.number .count-text.noneborder{
+    border-right: none;}
+
 .number .counterpart .timer{
+    border-right: 0.2px solid rgba(128, 128, 128,0.2);
     font-size: 46px;
     font-weight: 600;
     color:black;
+}
+.number .counterpart .timer.noneborder{
+    border-right: none;
+}
+/* INSTRUCTOR */
+.team-block-single{
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
+}
+.instructor .team-grids img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.instructor .team-bottom-block .member a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-weight: 600;
+}
+.instructor .team-bottom-block .member a:hover{
+    color: #ff6e65;
+}
+.instructor .team-bottom-block small{
+    font-size: 80%;
+    font-weight: 400;
+}
+.instructor .team-block-single .team-info a{
+    display: inline-block;
+    text-decoration: none;
+    background:white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.instructor .team-block-single .team-info a span{
+    color: #0d369f;
+    line-height: 28px;
+    font-size: 14px;
+}
+.instructor .team-block-single .team-info a:hover{
+    opacity: 0.8;
+}
+.instructor .team-grids{
+    position: relative;
+    overflow: hidden;
+}
+.instructor .team-info{
+    position: absolute;
+    bottom: -227px;
+    margin: 0;
+    background: rgba(8,8,8,0.29);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.5s;
+}
+.instructor .team-block-single:hover .team-info{
+    bottom: 0;
 }
