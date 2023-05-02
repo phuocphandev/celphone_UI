@@ -23,7 +23,7 @@ html, body{
     justify-content: space-between;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 991px) {
     .header__top{
         display:none;
     }
