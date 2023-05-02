@@ -360,3 +360,35 @@ h3.title-main::after{
 .instructor .team-block-single:hover .team-info{
     bottom: 0;
 }
+/* BACKTOTOP */
+.backToTop{  
+    background-color: rgb(13, 54, 159);
+       padding: 3px 18px;
+       border: none;
+       text-align: center;
+       outline: none;
+       border-radius: 10px;
+       font-size: 16px;
+       display: block;
+       position: fixed;
+       right: 15px;
+       bottom: 20px;
+       color: white;
+       box-shadow: -4px 4px 24px -10px #f55f8d;
+       visibility: hidden;
+       transition: 0.5s;
+
+   }
+a.backToTop:hover{
+    color:white;
+}
+.back-changecolor:hover{
+    opacity: 0.8;
+}
+.backToTop i{
+    line-height: 40px;
+}
+.cd-top--is-visible {
+       visibility: visible;
+       opacity: 1;
+}
