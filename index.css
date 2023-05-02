@@ -422,6 +422,27 @@ footer .box .subcribe_box h4 {
         align-items: center;
     }
     footer .footer_des{
-        flex-wrap: wrap;        
+        flex-wrap: wrap; 
+    }
+    .footer_des .about,
+    .footer_des .archives,
+    .footer_des .categories,
+    .footer_des .footer_contact{
+        min-width: 300px;
+    }
+    .footer_des .footer_contact::after{
+        height: 0;
+    }
+}
+@media screen and (max-width: 665px){
+    footer .footer_des{
+
+    }
+    .footer_des .about,
+    .footer_des .archives,
+    .footer_des .categories,
+    .footer_des .footer_contact{
+        min-width: 500px;
+        flex-wrap: wrap;
     }
 }
