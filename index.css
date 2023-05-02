@@ -562,7 +562,7 @@ h3.title-main::after{
 }
 
 /* Feedback  */
-.feedback .container {
+.feedback .ourcontainer {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -570,12 +570,12 @@ h3.title-main::after{
     align-items: center;
     gap:70px;
 }
-.feedback .container .feedback_title{
+.feedback .ourcontainer .feedback_title{
     font-size: 30px;
     font-weight: 600;
     position: relative;
 }
-.feedback .container .feedback_title::after{
+.feedback .ourcontainer .feedback_title::after{
     content: "";
     position: absolute;
     bottom: -10px;
@@ -585,7 +585,7 @@ h3.title-main::after{
     border-radius: 10px;
     background: gray;
 }
-.feedback .container .feedback_title::before{
+.feedback .ourcontainer .feedback_title::before{
     content: "";
     position: absolute;
     bottom: -5px;
