@@ -266,25 +266,21 @@
         <div class="number_count">
           <div class="row text-center justify-content-center">
             <div class="col-lg-3 col-sm-6">
-              <div class="counter"><div class="">6300</div>
+              <div class="counterpart"><div class="counter timer">6,300</div>
             <p class="count-text"> Learners & counting</p></div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-              <div class="counter"><div class="">638</div>
+              <div class="counterpart"><div class="counter timer">638</div>
             <p class="count-text"> Total courses</p></div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-              <div class="counter"><div class="">7600</div>
+              <div class="counterpart"><div class="counter timer">7,600</div>
             <p class="count-text"> Sucessful students</p></div>
             </div>
             <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-              <div class="counter border-right-0"><div class="">36</div>
+              <div class="counterpart border-right-0"><div class="counter timer">36</div>
             <p class="count-text"> Languages</p></div>
             </div>
-
-
-
-
           </div>
         </div>
       </div>
@@ -336,15 +332,26 @@
       crossorigin="anonymous"
     ></script> -->
     <!-- Xem thử nếu cần dòng trên thì ib nha, tại có dòng đó carousel của tui kh hoạt động!!! -->
+    <!-- Jquery 1.x -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Waypoint (use for number countup) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Countup (use for number countup) -->
+    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <!-- custom countup number -->
+    <script>
+      $('.counter').countUp()
+    </script>
   </body>
 </html>
