@@ -16,9 +16,7 @@ html, body{
     margin:0px 70px; 
 }
 
-.d_Theme.d_Theme-color{
-    color: white;
-}
+
 .d_Theme.d_Theme-background{
     background: #040a17;
 }
@@ -487,6 +485,9 @@ h3.title-main::after{
     transition: .5s;
     color: black;
 }
+.title h3.feature-title.white{
+    color: white;
+}
 .title h3.feature-title:hover{
     color:#ff6e65;
 }
@@ -494,7 +495,7 @@ h3.title-main::after{
     margin-top: 15px;
     font-size: 16px;
     line-height: 28px;
-    color: #707070;
+    color: #b7b7b7;
     letter-spacing: .4px;
 }
 /* NUMBER */
@@ -512,6 +513,9 @@ h3.title-main::after{
     font-size: 46px;
     font-weight: 600;
     color:black;
+}
+.number .counterpart .timer.white,.number .count-text.white{
+    color: white;
 }
 
 /* Banner */
@@ -531,13 +535,25 @@ h3.title-main::after{
     align-items: center;
     gap:20px;
 }
+
 .banner_item i{
     font-size: 25px;
-    background-color: #fff;
     color:#0d369f;
     padding:15px;
     border-radius: 50%;
+    position: relative;
 }
+.banner_item i::after{
+    content: "";
+    background: rgb(13 54 159 / 9%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top:-5px;
+    left:-5px;
+}
+
 .banner_row{
     display: flex;
     justify-content: space-between;
@@ -552,6 +568,15 @@ h3.title-main::after{
     gap:10px;
     align-items: center;
     justify-content: center;
+}
+.banner_row .banner_item.blue{
+    background: #161c2d;
+    color: white;
+}
+.banner_row .banner_item p.blue{
+    color: #b7b7b7;
+
+
 }
 .banner_row .banner_item .banner_item_container{
     display: flex;
@@ -644,7 +669,10 @@ h3.title-main::after{
     height: 260px;
     padding:20px 30px;
     background:#fff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 20px 30px;
+    box-shadow: 0 20px 62px rgb(218, 151, 116);
+}
+.feedback .feedback_item.blue{
+    background: #161c2d;
 }
 .feedback .feedback_item p{
     line-height: 1.6;
@@ -655,6 +683,10 @@ h3.title-main::after{
 .feedback .feedback_item .feedback_avatar_name h6{
     font-size: 20px;
     font-weight: 600;
+}
+.feedback .feedback_item .feedback_avatar_name h6.white{
+    color: white;
+
 }
 .feedback .feedback_item .feedback_avatar_name p{
     margin-top: -10px;
@@ -706,6 +738,10 @@ h3.title-main::after{
     border-radius: 8px;
     box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 }
+.team-block-single.blue{
+    background: #161c2d;
+
+}
 .instructor .team-grids img{
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -715,6 +751,9 @@ h3.title-main::after{
     color: black;
     transition: .5s;
     font-weight: 600;
+}
+.instructor .team-bottom-block .member a.white, .instructor .team-bottom-block small.white{
+    color: white;
 }
 .instructor .team-bottom-block .member a:hover, .instructor .team-block-single:hover .member a{
     color: #ff6e65;
@@ -857,6 +896,13 @@ footer .box{
     position: relative;
     top:-100px;
 }
+footer .box.blue{
+    background: #161c2d;
+}
+footer .box .subcribe_box h4.white{
+    color: white;
+
+}
 footer .box .subcribe_box{
     width: 50%;
     display: flex;
@@ -869,11 +915,14 @@ footer .box .input_box{
     height:55px;
 }
 footer .box .input_box input{
-    border: 2px solid #f6f6f6;
+    border: 1px solid #eee;
     border-radius: 10px 0 0 10px;
     border-right:transparent ;
     width: 300px;
+    padding-left: 20px;
+    background:transparent;
 }
+
 footer .box .input_box input:focus{
     outline: none;
     border-color:#7bdcb5;
@@ -884,7 +933,7 @@ footer .box .input_box button{
     width:100px;
     color: white;
     background-color: #0d369f;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 0 10px 10px 0;
 }
 footer .box .input_box button:active,
@@ -925,6 +974,9 @@ footer .box .subcribe_box h4 {
     color:#abb8c3;
     font-size: 14px;
     font-weight: 400;
+}
+.subcribe_box p{
+    color: #b7b7b7;
 }
 .footer_des .about,
 .footer_des .archives,
@@ -992,8 +1044,8 @@ footer .box .subcribe_box h4 {
     /* responsive */
 @media screen and (max-width: 992px){
     footer .box{
-        flex-wrap: wrap;
-        justify-content: center;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
         align-items: center;
     }
     footer .footer_des{

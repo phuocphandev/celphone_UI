@@ -42,8 +42,19 @@ const changeNumberColor=document.querySelector('.number h3');
 const changeFeedbackColor=document.querySelector('.feedback_title');
 const changeInstructorColor=document.querySelector('.instructor h3');
 const changeContactColor=document.querySelector('.contact h3');
-const changecolor=document.querySelector('.feature-title');
-const dtheme=document.querySelectorAll('.d_Theme');
+var w1=document.querySelectorAll('.title h3.feature-title');
+var w2=document.querySelectorAll('.banner_row .banner_item');
+var w3=document.querySelectorAll('.banner_row .banner_item p');
+var n1=document.querySelectorAll('.number .counterpart .timer');
+var n2=document.querySelectorAll('.number .count-text');
+var f1=document.querySelectorAll('.feedback .feedback_item .feedback_avatar_name h6');
+var f2=document.querySelectorAll('.feedback .feedback_item');
+var i1=document.querySelectorAll('.team-block-single');
+var i2=document.querySelectorAll('.instructor .team-bottom-block .member a');
+var i3=document.querySelectorAll('.instructor .team-bottom-block small');
+var s1=document.querySelectorAll('footer .box .subcribe_box h4');
+var s2=document.querySelectorAll('footer .box');
+
 
 
 // 
@@ -63,7 +74,23 @@ sun.addEventListener('click', function(){
     dropdownitem.forEach(link=> link.style.color="black");
     ulnavbar.style.background=html.style.backgroundColor;
     searchright.style.background=html.style.backgroundColor;
-    dtheme.forEach(link => link.classList.remove('d_Theme-color'));
+    changeTitleColor.style.color="black";
+    changeNumberColor.style.color="black";
+    changeFeedbackColor.style.color="black";
+    changeInstructorColor.style.color="black";
+    changeContactColor.style.color="black";
+    w1.forEach(link => link.classList.remove('white'));
+    w2.forEach(link=>link.classList.remove('blue'));
+    w3.forEach(link=>link.classList.remove('blue'));
+    n1.forEach(link=>link.classList.remove('white'));
+    n2.forEach(link=>link.classList.remove('white'));
+    f1.forEach(link=>link.classList.remove('white'));
+    f2.forEach(link=>link.classList.add('blue'));
+    i1.forEach(link=>link.classList.remove('blue'));
+    i2.forEach(link=>link.classList.remove('white'));
+    i3.forEach(link=>link.classList.remove('white'));
+    s1.forEach(link=>link.classList.remove('white'));
+    s2.forEach(link=>link.classList.remove('blue'));
 });
 moon.addEventListener('click', function(){
     sun.classList.remove('d-none');
@@ -87,9 +114,18 @@ moon.addEventListener('click', function(){
     changeFeedbackColor.style.color="white";
     changeInstructorColor.style.color="white";
     changeContactColor.style.color="white";
-    changecolor.forEach(link => link.style.color="white");
-    dtheme.forEach(link => link.classList.add('d_Theme-color'));
-
+    w1.forEach(link => link.classList.add('white'));
+    w2.forEach(link=>link.classList.add('blue'));
+    w3.forEach(link=>link.classList.add('blue'));
+    n1.forEach(link=>link.classList.add('white'));
+    n2.forEach(link=>link.classList.add('white'));
+    f1.forEach(link=>link.classList.add('white'));
+    f2.forEach(link=>link.classList.add('blue'));
+    i1.forEach(link=>link.classList.add('blue'));
+    i2.forEach(link=>link.classList.add('white'));
+    i3.forEach(link=>link.classList.add('white'));
+    s1.forEach(link=>link.classList.add('white'));
+    s2.forEach(link=>link.classList.add('blue'));
 });
 
 window.addEventListener('scroll', function() {
