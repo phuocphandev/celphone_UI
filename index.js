@@ -36,6 +36,20 @@ ulnavbar.style.background="white";
 searchright.style.background="white";
 const sun=document.querySelector('.gg-sun');
 const moon=document.querySelector('.gg-moon');
+// Biến đổi màu chữ khi đổi theme
+const changeTitleColor=document.querySelector('.title h3');
+const changeNumberColor=document.querySelector('.number h3');
+const changeFeedbackColor=document.querySelector('.feedback_title');
+const changeInstructorColor=document.querySelector('.instructor h3');
+const changeContactColor=document.querySelector('.contact h3');
+
+const changecolor=document.querySelector('.feature-title');
+
+
+
+
+
+// 
 sun.addEventListener('click', function(){
     sun.classList.add('d-none');
     moon.classList.remove('d-none');
@@ -51,6 +65,8 @@ sun.addEventListener('click', function(){
     dropdownitem.forEach(link=> link.style.color="black");
     ulnavbar.style.background=body.style.backgroundColor;
     searchright.style.background=body.style.backgroundColor;
+    // Đổi màu chữ title
+  
    
     // navElement.style.setProperty('--navlink-color','black');
     // navcontact.style.setProperty('--navlink-color','black')
@@ -86,6 +102,14 @@ moon.addEventListener('click', function(){
     dropdownitem.forEach(link=> link.style.color="white");
     ulnavbar.style.background=body.style.backgroundColor;
     searchright.style.background=body.style.backgroundColor;
+    // ChangeTITLEcolor 
+    changeTitleColor.style.color="white";
+    changeNumberColor.style.color="white";
+    changeFeedbackColor.style.color="white";
+    changeInstructorColor.style.color="white";
+    changeContactColor.style.color="white";
+
+    changecolor.forEach(link => link.style.color="white");
     // navdropdown.style.setProperty('--navlink-color','white');
     // navcontact.style.setProperty('--navlink-color','white');
 
