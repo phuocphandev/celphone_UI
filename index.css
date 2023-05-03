@@ -1077,11 +1077,18 @@ footer .box .subcribe_box h4 {
     .footer_des .archives,
     .footer_des .categories,
     .footer_des .footer_contact{
-        min-width: 500px;
+        min-width: 400px;
         flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 440px){
+    .footer_des .about,
+    .footer_des .archives,
+    .footer_des .categories,
+    .footer_des .footer_contact{
+        min-width: 250px;
+        flex-wrap: wrap;
+    }
     footer .box .subcribe_box h4{
         font-size: 30px;
     }
