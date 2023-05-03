@@ -305,7 +305,9 @@ button.navbar-toggler{
     max-width: 450px;
 }
 .carousel_container .container h1{
-    font-size: 50px;
+    width:600px;
+    font-size: 70px;
+    font-weight: 700;
     color:white;
     margin-bottom:20px;
 }
@@ -405,7 +407,8 @@ button.navbar-toggler{
         width: 100%;
     }
     .carousel_container .container h1{
-        font-size: 35px;
+        max-width: 600px;
+        font-size: 50px;
     }
 }
 @media screen and (max-width: 768px){
@@ -418,7 +421,7 @@ button.navbar-toggler{
         width: 100%;
     }
     .carousel_container .container h1{
-        font-size: 20px;
+        font-size: 45px;
     }
 }
 /* TITLE */
