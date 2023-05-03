@@ -108,15 +108,16 @@ moon.addEventListener('click', function(){
 
 window.addEventListener('scroll', function() {
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 50) {
     hBottomelement.classList.add('fixed-top');
-  
     hBottomelement.style.background=body.style.backgroundColor;
+    hTopelement.style.opacity="0";
   }
   else{
     hBottomelement.classList.remove('fixed-top');
     hBottomelement.classList.add('d-block');
     hBottomelement.style.background="transparent";
+    hTopelement.style.opacity="1";
   }
   });
 

@@ -29,7 +29,9 @@ html, body{
     align-items: center;
     justify-content: space-between;
     transition: 0.5s;
+    opacity: 1;
 }
+
 
 @media (max-width: 991px) {
     .header__top{
