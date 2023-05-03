@@ -1086,7 +1086,8 @@ footer .box .subcribe_box h4 {
     .footer_des .archives,
     .footer_des .categories,
     .footer_des .footer_contact{
-        min-width: 250px;
+        display: block;
+        min-width: 300px;
         flex-wrap: wrap;
     }
     footer .box .subcribe_box h4{
