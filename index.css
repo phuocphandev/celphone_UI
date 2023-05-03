@@ -937,12 +937,16 @@ footer .box .input_box button{
     background-color: #0d369f;
     border: 1px solid transparent;
     border-radius: 0 10px 10px 0;
+    transition: 0.5s;
+}
+footer .box .input_box button:hover{
+    background-color: rgba(13, 54, 159,0.8);
 }
 footer .box .input_box button:active,
 footer .box .input_box button:focus{
     outline: none;
     border-color: #7bdcb5;
-    border-radius:10px;
+    border-radius:0 10px 10px 0;
 }
 footer .box .subcribe_box h4 {
     font-size: 35px;
