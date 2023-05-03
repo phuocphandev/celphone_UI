@@ -446,3 +446,21 @@ footer .box .subcribe_box h4 {
         flex-wrap: wrap;
     }
 }
+/* Footer footer  */
+.footer_footer{
+    background-color: #040a17;
+    padding:10px 0;  
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.footer_footer p{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a0a0a0;
+    font-weight: 400;
+}
+.footer_footer a{
+    color: white;
+}
