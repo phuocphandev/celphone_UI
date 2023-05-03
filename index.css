@@ -16,6 +16,12 @@ html, body{
     margin:0px 70px; 
 }
 
+.d_Theme.d_Theme-color{
+    color: white;
+}
+.d_Theme.d_Theme-background{
+    background: #040a17;
+}
 /* .fixed-div {
     position: fixed;
     top: 0;
@@ -221,6 +227,7 @@ button.navbar-toggler{
     text-align: center;
     /* background: #161c2d;  */
     width: 100%;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 }} 
 /* block chứa ô search */
  @media only screen and (max-width: 991px){#navbarSupportedContent .form-inline{
@@ -229,6 +236,7 @@ button.navbar-toggler{
     /* background: #161c2d; */
     padding: 20px 0;
     justify-content: center;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
 
 }} 
 /* reponsive dropdownmenu */

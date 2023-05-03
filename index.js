@@ -18,9 +18,9 @@ toggleButton.addEventListener("click", function() {
  */
 var hTopelement = document.querySelector('.header__top');
 var hBottomelement = document.querySelector('.header__bottom');
-const body = document.body;
-const html = document.documentElement;
-body.style.background="white";
+var body = document.body;
+var html = document.documentElement;
+html.style.background="white";
 var brandnameElement = document.querySelector('.header__bottom .brandname');
 var formElement=document.querySelector('.header__bottom .input-search input');
 const input = document.getElementById('searchform');
@@ -42,11 +42,8 @@ const changeNumberColor=document.querySelector('.number h3');
 const changeFeedbackColor=document.querySelector('.feedback_title');
 const changeInstructorColor=document.querySelector('.instructor h3');
 const changeContactColor=document.querySelector('.contact h3');
-
 const changecolor=document.querySelector('.feature-title');
-
-
-
+const dtheme=document.querySelectorAll('.d_Theme');
 
 
 // 
@@ -55,6 +52,7 @@ sun.addEventListener('click', function(){
     moon.classList.remove('d-none');
     body.style.backgroundColor = "white";
     html.style.backgroundColor = "white";
+    hBottomelement.style.background= html.style.backgroundColor;
     brandnameElement.classList.remove("brandname_darkTheme");
     formElement.style.border="2px solid gray";
     formElement.style.background="transparent";
@@ -63,29 +61,9 @@ sun.addEventListener('click', function(){
     navDark.forEach(link => link.classList.remove('darkTheme'));
     dropdownmenu.style.background="white";
     dropdownitem.forEach(link=> link.style.color="black");
-    ulnavbar.style.background=body.style.backgroundColor;
-    searchright.style.background=body.style.backgroundColor;
-    // Đổi màu chữ title
-  
-   
-    // navElement.style.setProperty('--navlink-color','black');
-    // navcontact.style.setProperty('--navlink-color','black')
-
-    // const linkColor1 = window.getComputedStyle(navdropdown).getPropertyValue('color');
-    // navdropdown.addEventListener('mouseover', function() {
-    // this.style.color = '#ff6e65';
-    // });
-    // navdropdown.addEventListener('mouseout', function() {
-    // this.style.color = linkColor1;
-    // });
-
-    // const linkColor2 = window.getComputedStyle(navcontact).getPropertyValue('color');
-    // navcontact.addEventListener('mouseover', function() {
-    // this.style.color = '#ff6e65';
-    // });
-    // navcontact.addEventListener('mouseout', function() {
-    // this.style.color = linkColor2;
-    // });
+    ulnavbar.style.background=html.style.backgroundColor;
+    searchright.style.background=html.style.backgroundColor;
+    dtheme.forEach(link => link.classList.remove('d_Theme-color'));
 });
 moon.addEventListener('click', function(){
     sun.classList.remove('d-none');
@@ -93,6 +71,7 @@ moon.addEventListener('click', function(){
     hTopelement.style.background="#4867b0";
     body.style.backgroundColor = "#161c2d";
     html.style.backgroundColor = "#161c2d";
+    hBottomelement.style.background= html.style.backgroundColor;
     brandnameElement.classList.add("brandname_darkTheme");
     formElement.style.border="2px solid white";
     formElement.style.background="transparent";
@@ -100,42 +79,25 @@ moon.addEventListener('click', function(){
     navDark.forEach(link => link.classList.add('darkTheme'));
     dropdownmenu.style.background="#161c2d";
     dropdownitem.forEach(link=> link.style.color="white");
-    ulnavbar.style.background=body.style.backgroundColor;
-    searchright.style.background=body.style.backgroundColor;
+    ulnavbar.style.background=html.style.backgroundColor;
+    searchright.style.background=html.style.backgroundColor;
     // ChangeTITLEcolor 
     changeTitleColor.style.color="white";
     changeNumberColor.style.color="white";
     changeFeedbackColor.style.color="white";
     changeInstructorColor.style.color="white";
     changeContactColor.style.color="white";
-
     changecolor.forEach(link => link.style.color="white");
-    // navdropdown.style.setProperty('--navlink-color','white');
-    // navcontact.style.setProperty('--navlink-color','white');
+    dtheme.forEach(link => link.classList.add('d_Theme-color'));
 
-    // const linkColor1 = window.getComputedStyle(navdropdown).getPropertyValue('color');
-    // navdropdown.addEventListener('mouseover', function() {
-    // this.style.color = '#ff6e65';
-    // });
-    // navdropdown.addEventListener('mouseout', function() {
-    // this.style.color = linkColor1;
-    // });
-
-    // const linkColor2 = window.getComputedStyle(navcontact).getPropertyValue('color');
-    // navcontact.addEventListener('mouseover', function() {
-    // this.style.color = '#ff6e65';
-    // });
-    // navcontact.addEventListener('mouseout', function() {
-    // this.style.color = linkColor2;
-    // });
 });
 
 window.addEventListener('scroll', function() {
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 50) {
     hBottomelement.classList.add('fixed-top');
   
-    hBottomelement.style.background=body.style.backgroundColor;
+    hBottomelement.style.background=html.style.backgroundColor;
   }
   else{
     hBottomelement.classList.remove('fixed-top');
