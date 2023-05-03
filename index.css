@@ -916,17 +916,19 @@ footer .box .input_box{
 }
 footer .box .input_box input{
     border: 1px solid #eee;
-    border-radius: 10px 0 0 10px;
-    border-right:transparent ;
+    border-radius: 10px;
     width: 300px;
     padding-left: 20px;
     background:transparent;
+    border-radius: 10px 0px 0px 10px;
+}
+footer .box .input_box input.trans{
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 footer .box .input_box input:focus{
     outline: none;
     border-color:#7bdcb5;
-    border-right:transparent ;
     border-radius: 10px 0 0 10px;
 }
 footer .box .input_box button{
@@ -940,7 +942,7 @@ footer .box .input_box button:active,
 footer .box .input_box button:focus{
     outline: none;
     border-color: #7bdcb5;
-    border-radius: 0 10px 10px 0;
+    border-radius:10px;
 }
 footer .box .subcribe_box h4 {
     font-size: 35px;
@@ -1061,16 +1063,39 @@ footer .box .subcribe_box h4 {
         height: 0;
     }
 }
-@media screen and (max-width: 665px){
-    footer .footer_des{
-
+@media screen and (max-width: 765px){
+    footer .box{
+        flex-wrap: wrap;
     }
+}
+@media screen and (max-width: 665px){
     .footer_des .about,
     .footer_des .archives,
     .footer_des .categories,
     .footer_des .footer_contact{
         min-width: 500px;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 440px){
+    footer .box .subcribe_box h4{
+        font-size: 30px;
+    }
+    footer .input_box{
+        flex-wrap: wrap;
+        transform: translateY(-35px);
+        width: 100%;
+        
+    }
+    footer .box .input_box input, footer .box .input_box button{
+        width: 100%;
+        display: block;
+        height: 80%;
+        border-radius: 10px;
+            
+    }
+    footer .box .input_box input{
+        margin-bottom: 5px;
     }
 }
 /* Footer footer  */

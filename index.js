@@ -54,8 +54,7 @@ var i2=document.querySelectorAll('.instructor .team-bottom-block .member a');
 var i3=document.querySelectorAll('.instructor .team-bottom-block small');
 var s1=document.querySelectorAll('footer .box .subcribe_box h4');
 var s2=document.querySelectorAll('footer .box');
-
-
+var u=document.querySelectorAll('footer .box .input_box input');
 
 // 
 sun.addEventListener('click', function(){
@@ -85,12 +84,13 @@ sun.addEventListener('click', function(){
     n1.forEach(link=>link.classList.remove('white'));
     n2.forEach(link=>link.classList.remove('white'));
     f1.forEach(link=>link.classList.remove('white'));
-    f2.forEach(link=>link.classList.add('blue'));
+    f2.forEach(link=>link.classList.remove('blue'));
     i1.forEach(link=>link.classList.remove('blue'));
     i2.forEach(link=>link.classList.remove('white'));
     i3.forEach(link=>link.classList.remove('white'));
     s1.forEach(link=>link.classList.remove('white'));
     s2.forEach(link=>link.classList.remove('blue'));
+    u.forEach(link=>link.classList.remove('trans'));
 });
 moon.addEventListener('click', function(){
     sun.classList.remove('d-none');
@@ -126,6 +126,7 @@ moon.addEventListener('click', function(){
     i3.forEach(link=>link.classList.add('white'));
     s1.forEach(link=>link.classList.add('white'));
     s2.forEach(link=>link.classList.add('blue'));
+    u.forEach(link=>link.classList.add('trans'));
 });
 
 window.addEventListener('scroll', function() {
