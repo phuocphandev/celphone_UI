@@ -604,8 +604,8 @@ h3.title-main::after{
     flex-direction: column;
     justify-content: center;
     gap:20px;
-    max-width: 370px;
-    max-height: 260px;
+    width: 370px;
+    height: 260px;
     padding:20px 30px;
     background:#fff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 20px 30px;
@@ -625,7 +625,8 @@ h3.title-main::after{
     font-size: 12px;
 }
 .feedback .feedback_item i{
-    color:red;
+    font-size: 22px;
+    color:#ff6e65;
 }
 .feedback .feedback_item_container{
     display: flex;
@@ -650,8 +651,14 @@ h3.title-main::after{
     .feedback_item{
         margin: auto;
     }
-    .feedback_item_responsive{
-        flex-basis: 100%;
+
+}
+@media screen and (max-width: 815px){
+    .feedback_item{
+        max-width: 370px;
+        display: inline;
+        overflow-wrap: break-word;
+        flex-basis: 80%;
         margin: auto;
-    } 
+    }
 }
