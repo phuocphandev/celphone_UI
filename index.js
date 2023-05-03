@@ -17,8 +17,10 @@ toggleButton.addEventListener("click", function() {
  * Dark theme and light theme
  */
 var hTopelement = document.querySelector('.header__top');
+var hBottomelement = document.querySelector('.header__bottom');
 const body = document.body;
 const html = document.documentElement;
+body.style.background="white";
 var brandnameElement = document.querySelector('.header__bottom .brandname');
 var formElement=document.querySelector('.header__bottom .input-search input');
 const input = document.getElementById('searchform');
@@ -28,7 +30,10 @@ var dropdownmenu =document.querySelector('.navbar-expand-lg .navbar-nav .dropdow
 var dropdownitem = document.querySelectorAll('.dropdown-item');
 // var navdropdown=document.querySelector('#navbarDropdown');
 // var navcontact=document.querySelector('#navlink-contact');
-
+var ulnavbar=document.querySelector('.domnotchange ul');
+var searchright=document.querySelector('.domnotchange .search__right');
+ulnavbar.style.background="white";
+searchright.style.background="white";
 const sun=document.querySelector('.gg-sun');
 const moon=document.querySelector('.gg-moon');
 sun.addEventListener('click', function(){
@@ -44,6 +49,8 @@ sun.addEventListener('click', function(){
     navDark.forEach(link => link.classList.remove('darkTheme'));
     dropdownmenu.style.background="white";
     dropdownitem.forEach(link=> link.style.color="black");
+    ulnavbar.style.background=body.style.backgroundColor;
+    searchright.style.background=body.style.backgroundColor;
    
     // navElement.style.setProperty('--navlink-color','black');
     // navcontact.style.setProperty('--navlink-color','black')
@@ -77,6 +84,8 @@ moon.addEventListener('click', function(){
     navDark.forEach(link => link.classList.add('darkTheme'));
     dropdownmenu.style.background="#161c2d";
     dropdownitem.forEach(link=> link.style.color="white");
+    ulnavbar.style.background=body.style.backgroundColor;
+    searchright.style.background=body.style.backgroundColor;
     // navdropdown.style.setProperty('--navlink-color','white');
     // navcontact.style.setProperty('--navlink-color','white');
 
@@ -96,3 +105,18 @@ moon.addEventListener('click', function(){
     // this.style.color = linkColor2;
     // });
 });
+
+window.addEventListener('scroll', function() {
+
+  if (window.scrollY > 0) {
+    hBottomelement.classList.add('fixed-top');
+  
+    hBottomelement.style.background=body.style.backgroundColor;
+  }
+  else{
+    hBottomelement.classList.remove('fixed-top');
+    hBottomelement.classList.add('d-block');
+    hBottomelement.style.background="transparent";
+  }
+  });
+

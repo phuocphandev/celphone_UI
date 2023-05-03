@@ -28,6 +28,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: 0.5s;
 }
 
 @media (max-width: 991px) {
@@ -124,10 +125,14 @@ html, body{
 
 .header__bottom .navbar-brand .brandname:hover{
     color: #ff6e65;
+    position: relative;
+    z-index: 15;
 }
 
 .header__bottom .nav-item .nav-link:hover{
     color: #ff6e65;
+    position: relative;
+    z-index: 15;
 }
 
 .header__bottom .nav-item.active .nav-link{
@@ -201,6 +206,7 @@ button.navbar-toggler{
 .dropdown-menu.show {
     display: inline-block;
 }
+
 @media only screen and (max-width: 991px) {.form-inline .input-search{
     text-align: center;
    
@@ -255,15 +261,22 @@ button.navbar-toggler{
  }}  
  @media only screen and (max-width: 991px){
     .header__bottom{
-        position: absolute;
-        background: transparent;
+        position: fixed;
         top: 0;
         left: 0;
-        z-index: 3;
+        z-index: 15;
         width: 100%;
+        transition: .5s;
     }
     
 }
+@media only screen and (max-width: 991px){
+    .header__bottom:not(.domnotchange){
+        background: transparent;
+        transition: .5s;
+    }    
+}
+
 
 /* Carousel  */
         /* Css  */
@@ -1013,5 +1026,3 @@ footer .box .subcribe_box h4 {
 .footer_footer a{
     color: white;
 }
-
-
